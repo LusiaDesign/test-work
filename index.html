@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-work</title>
+    <link rel="icon" href="images/logo.svg" sizes="16x16" type="images/x-icon">
+    <link rel="shortcut icon" href="images/logo.svg" sizes="16x16" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="main">
+        <h1 class="sr-only">Dashboard for Evano Project Manager</h1>
+        <section class="dashboard">
+            <div class="dashboard__sidebar sidebar">
+                <button class="menu-btn" type="button">
+                    <span class="sr-only">вызов меню</span>
+                    <span class="menu-btn__btn-line"></span>
+                </button>
+                <h2 class="sr-only">dashboard</h2>
+                <nav class="sidebar__menu">
+                    <a class="logo" href="index.html">
+                        <img class="logo__img" src="images/logo.svg" width="37" height="37" alt="logo company">
+                        <span>Dashboard
+                            <span class="logo__version">v.01</span>
+                        </span>
+                    </a>
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="Dashboard.html">
+                                <svg class="sidebar__icon" width="24" height="24">
+                                    <use xlink:href="images/sprite.svg#icon-1"></use>
+                                </svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="Product.html">
+                                <svg class="sidebar__icon sidebar__icon--bag" width="24" height="24">
+                                    <use xlink:href="images/sprite.svg#icon-2"></use>
+                                </svg>
+                                Product
+                                <svg class="sidebar__link-chevron" width="12" height="12">
+                                    <use xlink:href="images/sprite.svg#chevron"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="Customers.html">
+                                <svg class="sidebar__icon" width="24" height="24">
+                                    <use xlink:href="images/sprite.svg#icon-3"></use>
+                                </svg>
+                                Customers
+                                <svg class="sidebar__link-chevron" width="12" height="12">
+                                    <use xlink:href="images/sprite.svg#chevron"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="Income.html">
+                                <svg class="sidebar__icon" width="24" height="24">
+                                    <use xlink:href="images/sprite.svg#icon-4"></use>
+                                </svg>
+                                Income
+                                <svg class="sidebar__link-chevron" width="12" height="12">
+                                    <use xlink:href="images/sprite.svg#chevron"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="Promote.html">
+                                <svg class="sidebar__icon sidebar__icon--bag" width="24" height="24">
+                                    <use xlink:href="images/sprite.svg#icon-5"></use>
+                                </svg>
+                                Promote
+                                <svg class="sidebar__link-chevron" width="12" height="12">
+                                    <use xlink:href="images/sprite.svg#chevron"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sidebar__item">
+                            <a class="sidebar__link" href="Help.html">
+                                <svg class="sidebar__icon sidebar__icon--bag" width="24" height="24">
+                                    <use xlink:href="images/sprite.svg#icon-6"></use>
+                                </svg>
+                                Help
+                                <svg class="sidebar__link-chevron" width="12" height="12">
+                                    <use xlink:href="images/sprite.svg#chevron"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="dashboard__owner owner">
+                    <img class="owner__img" src="images/userpic.png" alt="avatar owner" width="42" height="42">
+                    <span class="owner__info">
+                        Evano
+                        <span class="owner__function">Project Manager</span>
+                    </span>
+                </div>
+            </div>
+            <div class="dashboard__info">
+                <h2 class="dashboard__welcome">Hello Evano 👋🏼</h2>
+                <div class="dashboard__content">
+                    <div class="dashboard__head">
+                        <div class="dashboard__head-wrap">
+                            <h3 class="dashboard__title">All Customers</h3>
+                            <span class="dashboard__status online">Active Members</span>
+                            <span class="dashboard__status ofline">Not activee Members</span>
+                        </div>
+                        <form class="dashboard__search-form search-form" action="#">
+                            <label class="search-form__label">
+                                <svg width="24" height="24">
+                                    <use xlink:href="images/sprite.svg#search"></use>
+                                </svg>
+                                <input class="search-form__field" type="search" placeholder="Search" name="Search">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="dashboard__table table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer Name</th>
+                                    <th>Company</th>
+                                    <th>Phone Number</th>
+                                    <th>Email</th>
+                                    <th>Country</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jane Cooper</td>
+                                    <td>Microsoft</td>
+                                    <td>(225) 555-0118</td>
+                                    <td>jane@microsoft.com</td>
+                                    <td>United States</td>
+                                    <td><span class="table__status active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Floyd Miles</td>
+                                    <td>Yahoo</td>
+                                    <td>(205) 555-0100</td>
+                                    <td>floyd@yahoo.com</td>
+                                    <td>Kiribati</td>
+                                    <td><span class="table__status inactive">Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ronald Richards</td>
+                                    <td>Adobe</td>
+                                    <td>(302) 555-0107</td>
+                                    <td>ronald@adobe.com</td>
+                                    <td>Israel</td>
+                                    <td><span class="table__status inactive">Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Marvin McKinney</td>
+                                    <td>Tesla</td>
+                                    <td>(252) 555-0126</td>
+                                    <td>marvin@tesla.com</td>
+                                    <td>Iran</td>
+                                    <td><span class="table__status active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jerome Bell</td>
+                                    <td>Google</td>
+                                    <td>(629) 555-0129</td>
+                                    <td>jerome@google.com</td>
+                                    <td>Réunion</td>
+                                    <td><span class="table__status active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kathryn Murphy</td>
+                                    <td>Microsoft</td>
+                                    <td>(406) 555-0120</td>
+                                    <td>kathryn@microsoft.com</td>
+                                    <td>Curaçao</td>
+                                    <td><span class="table__status active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob Jones</td>
+                                    <td>Yahoo</td>
+                                    <td>(208) 555-0112</td>
+                                    <td>jacob@yahoo.com</td>
+                                    <td>Brazil</td>
+                                    <td><span class="table__status active">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kristin Watson</td>
+                                    <td>Facebook</td>
+                                    <td>(704) 555-0127</td>
+                                    <td>kristin@facebook.com</td>
+                                    <td>Åland Islands</td>
+                                    <td><span class="table__status inactive">Inactive</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="dashboard__bottom">
+                        <span class="dashboard__bottom-text">Showing data 1 to 8 of 256K entries</span>
+                        <div class="dashboard__pagination pagination">
+                            <button class="pagination__btn" type="button">
+                                <svg class="pagination__arrow-left" width="6" height="10">
+                                    <use xlink:href="../../images/sprite.svg#chevron"></use>
+                                </svg>
+                            </button>
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">4</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__span" href="#">...</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">40</a>
+                                </li>
+                            </ul>
+                            <button class="pagination__btn" type="button">
+                                <svg width="6" height="10">
+                                    <use xlink:href="../../images/sprite.svg#chevron"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
