@@ -1,0 +1,137 @@
+.table {
+    padding: 0 38px;
+    scrollbar-color: rgba(89, 50, 234, 0.7) rgba(89, 50, 234, 0.1);
+    scrollbar-width: thin;
+
+    @media (max-width: 1200px) {
+        padding: 0 12px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+        background-color: rgba(89, 50, 234, 0.1);
+    }
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+        background-color: #f9f9fd;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: linear-gradient(180deg, rgba(89, 50, 234, 0.1), rgba(89, 50, 234, 0.7));
+    }
+
+    table {
+        width: 100%;
+        background-color: #fff;
+
+        @media (max-width: 768px) {
+            width: 980px;
+        }
+    }
+
+    thead {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 105%;
+            height: 1px;
+            bottom: 0;
+            left: -38px;
+            background-color: #eee;
+        }
+    }
+
+    th {
+        padding: 14px 0;
+        color: #B5B7C0;
+        text-align: left;
+
+        &:first-child {
+            width: 172px;
+
+            @media (max-width: 1200px) {
+                width: 155px;
+            }
+        }
+
+        &:nth-child(2) {
+            width: 131px;
+
+            @media (max-width: 1200px) {
+                width: 100px;
+            }
+        }
+
+        &:nth-child(3) {
+            width: 157px;
+        }
+
+        &:nth-child(4) {
+            width: 207px;
+
+            @media (max-width: 1200px) {
+                width: 180px;
+            }
+        }
+
+        &:nth-child(5) {
+            width: 139px;
+
+            @media (max-width: 1200px) {
+                width: 115px;
+            }
+        }
+
+        &:nth-child(6) {
+            width: 83px;
+            text-align: center;
+        }
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid #EEE;
+        }
+    }
+
+    td {
+        padding: 20px 0 19px 0;
+
+        &:last-child {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            padding: 15px 0;
+        }
+    }
+
+    &__status {
+        border-radius: 4px;
+        padding: 3px 0;
+        display: inline-block;
+        width: 80px;
+        text-align: center;
+
+        &.active {
+            color: #008767;
+            background-color: rgba(22, 192, 152, 0.38);
+            border: 1px solid #00B087;
+        }
+
+        &.inactive {
+            color: #DF0404;
+            background-color: #FFC5C5;
+            border: 1px solid #DF0404;
+        }
+    }
+}

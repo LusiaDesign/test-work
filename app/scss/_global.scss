@@ -1,0 +1,66 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins';
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: #292D32;
+    background-color: #fff;
+    margin: 0;
+}
+
+/* в input отступ от крестика*/
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    margin: 0 10px;
+}
+
+svg {
+    fill: none;
+    stroke: currentColor;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.no-scroll {
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 250%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+}
+
+/*клас для схову тексту. текст для скрінрідера*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main {
+    flex-grow: 1;
+}

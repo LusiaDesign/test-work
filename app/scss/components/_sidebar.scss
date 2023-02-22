@@ -1,0 +1,74 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 992px) {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: -240px;
+        background-color: #fff;
+        z-index: 2;
+        transition: all 2s;
+        box-shadow: 0 3px 15px rgba(34, 60, 80, 0.2);
+    }
+
+    @media (max-width: 576px) {
+        left: -260px;
+    }
+
+    &.active {
+        left: 0;
+    }
+
+    &__menu {
+        margin-bottom: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        @media screen and (orientation: landscape) {
+            overflow-y: auto;
+        }
+    }
+
+    &__item {
+        margin-bottom: 18px;
+
+        @media screen and (orientation: landscape) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        color: #9197B3;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        padding: 11px 8px 11px 11px;
+
+        &:focus {
+            color: #5932EA;
+        }
+
+        &:hover {
+            background-color: #5932EA;
+            color: #fff;
+        }
+
+    }
+
+    &__link-chevron {
+        margin-left: auto;
+    }
+
+    &__icon {
+        margin-right: 14px;
+
+        &--bag {
+            fill: currentColor;
+            stroke: none;
+        }
+    }
+}
